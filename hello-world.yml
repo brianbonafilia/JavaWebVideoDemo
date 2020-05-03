@@ -1,0 +1,9 @@
+template: hello world
+
+defaultName: yoda
+
+viewsConfig:
+  freemarker:
+    strict_syntax: true
+  mustache:
+    cache: false
