@@ -55,7 +55,7 @@ public class HelloWorldResource {
     public Response stream(@HeaderParam("Range") String range) throws Exception {
         URL url = this.getClass().getResource( FILE_PATH );
         System.out.println(url);
-        File file = new File( "/Users/bbonafil/IdeaProjects/JavaWebVideoDemo/target/classes/helloworld/somevideo.mp4" );
+        File file = new File( "/home/opc/JavaWebVideoDemo/target/classes/helloworld/somevideo.mp4" );
         System.out.println(url.getFile());
         return buildStream( file, range );
     }
